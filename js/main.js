@@ -23,32 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  /* Fade-in on load. Staggered slightly per element, but always resolves —
-     content is never left permanently hidden regardless of scroll behavior. */
-  const revealEls = document.querySelectorAll(".reveal");
-  revealEls.forEach((el, i) => {
-    const delay = Math.min(i * 40, 400);
-    setTimeout(() => el.classList.add("is-visible"), delay);
-  });
-  // Safety net: guarantee visibility even if something above throws.
-  window.addEventListener("load", () => {
-    revealEls.forEach((el) => el.classList.add("is-visible"));
-  });
-
   /* Footer year */
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-  /* Newsletter form (static placeholder — wire up to a real provider later) */
-  document.querySelectorAll(".newsletter-form").forEach((form) => {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const msg = form.querySelector(".newsletter-msg");
-      const input = form.querySelector("input[type=email]");
-      if (msg) {
-        msg.textContent = "Thanks — you're on the list! (Connect this form to Mailchimp/ConvertKit/etc. to make it live.)";
-      }
-      if (input) input.value = "";
-    });
-  });
 });
