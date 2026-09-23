@@ -1,10 +1,10 @@
 # RPI IEEE Student Branch — Website
 
-A minimal starting point for the IEEE Student Branch website at Rensselaer Polytechnic Institute. Plain HTML/CSS/JS — no build step, no dependencies, deploys straight to GitHub Pages.
+Had Claude Scrape the site data from the old site, and then realized that I didn't want to use it.
 
 ## Current state
 
-This is intentionally stripped down: just the site's nav, page shells, and basic styling — no real content yet. Each page (`officers.html`, `calendar.html`, `nexus.html`, `join.html`, `contact.html`) has a heading and nothing else. Fill them in with real content when it's ready.
+Just the site's nav, page shells, and basic styling — no real content. Each page (`officers.html`, `calendar.html`, `nexus.html`, `join.html`, `contact.html`) has a heading and nothing else. Might get rid of the nexus page cause idk what to do with that.
 
 ## Structure
 

@@ -27,7 +27,6 @@ HEADER = """  <header class="navbar">
 FOOTER = """  <footer class="site-footer">
     <div class="container">
       <span>&copy; <span id="year"></span> IEEE Student Branch at RPI</span>
-      <a href="mailto:ieee@rpi.edu">ieee@rpi.edu</a>
     </div>
   </footer>
   <script src="js/main.js"></script>"""
